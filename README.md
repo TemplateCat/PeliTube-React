@@ -1,6 +1,5 @@
-# PeliTube creado con React
+# PeliTube creado con React (Sitio en Desarrollo)
 
-### (Sitio en Desarrollo)
 ### Ver [Live Demo](https://templatecat-pelitube.netlify.app/).
 
 Para seguir expandiendo mis conocimientos en React desarrolle un sitio donde se muestra una cartelera de
