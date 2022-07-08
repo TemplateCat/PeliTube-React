@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import LanguageContext from '../context/LanguageContext';
 
 import logoFt from '../img/logo-ft.png';
@@ -16,9 +17,15 @@ const Footer = () => {
 					</figure>
 					<nav className="flex flex-col lg:flex-row justify-between items-center gap-2 w-full">
 						<ul className="flex gap-10">
-							<li className="effect-zoom cursor-pointer"> {footerHome} </li>
-							<li className="effect-zoom cursor-pointer"> {footerAbout} </li>
-							<li className="effect-zoom cursor-pointer"> {footerContact} </li>
+							<li className="hover:text-sky-500 transition-all-500">
+								<Link to="/"> {footerHome} </Link>
+							</li>
+							<li className="hover:text-sky-500 transition-all-500">
+								<Link to="#"> {footerAbout} </Link>
+							</li>
+							<li className="hover:text-sky-500 transition-all-500">
+								<Link to="#"> {footerContact} </Link>
+							</li>
 						</ul>
 						<ul className="flex gap-5 dark:text-slate-400">
 							<li className="effect-zoom cursor-pointer">

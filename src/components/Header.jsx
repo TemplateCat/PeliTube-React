@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import LanguageContext from '../context/LanguageContext';
 import ThemeContext from '../context/ThemeContext';
 
@@ -24,13 +24,13 @@ const Header = ({ stickyMenu }) => {
 					<nav className="w-full">
 						<ul className="flex gap-10">
 							<li className="hover:text-sky-500 transition-all-500">
-								<NavLink to="/"> {headerHome} </NavLink>
+								<Link to="/"> {headerHome} </Link>
 							</li>
 							<li className="hover:text-sky-500 transition-all-500">
-								<NavLink to="/about"> {headerAbout} </NavLink>
+								<Link to="#"> {headerAbout} </Link>
 							</li>
 							<li className="hover:text-sky-500 transition-all-500">
-								<NavLink to="/contact"> {headerContact} </NavLink>
+								<Link to="#"> {headerContact} </Link>
 							</li>
 						</ul>
 					</nav>
